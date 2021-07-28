@@ -210,6 +210,7 @@ color: red;
     justify-content: center;
     align-items: center;
     outline: none;
+    opacity: 0;
     
 }
 .videoDiv
@@ -226,6 +227,7 @@ color: red;
 .videoDiv.active
 {
     z-index: 100000;
+    opacity: 1;
 }
 .closebtn
 {
