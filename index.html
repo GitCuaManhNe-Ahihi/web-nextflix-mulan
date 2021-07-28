@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="assets/style/main.css">
+    <script src="assets/js/main.js"></script>
+    <link rel="icon" href="assets/image/Netflix-new-icon.png">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <a href="#" class="logo"><img src="assets/image/logo.png" alt=""></a>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Show</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    <!---->
+       <div id="banner">
+           <img src="assets/image/bg.jpg" alt="" class="bg">
+           <div class="content">
+               <img src="assets/image/name.png" alt="" class="movieTitle">
+               <h4>
+                   <span>2020
+                   </span>
+                   <span> <i> 12+</i>
+                    </span>
+                    <span>1h 55min
+                    </span>
+                    <span>
+                        Action
+                    </span>
+               </h4>
+               <p>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, cum? Hic earum laborum debitis, architecto modi quia praesentium molestias, dolorem officiis recusandae sint! Laboriosam necessitatibus inventore fuga veritatis, magni eos?
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex praesentium eum. Obcaecati expedita impedit, ducimus ratione at, adipisci optio tempora nostrum sint cum qui quis ipsum quas ipsam? Voluptas!
+               </p>
+               <div class="btn">
+                   <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                   <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+               </div>
+           </div>
+       </div>
+       <a href="#" class="play" onclick="addToggle()"> <img src="assets/image/play.png" alt=""> <p>Watch Trailer</p></a>
+    </div>
+    <div class="videoDiv">
+    <video src="assets/video/Disney's Mulan _ Final Trailer.mp4"   controls="true" class="videoPlay"></video>
+    <a href="" class="closebtn" onclick="addToggle()"><img src="assets/image/close.png" alt="" ></a>
+    </div>
+</body>
+</html>
