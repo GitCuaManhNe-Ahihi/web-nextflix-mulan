@@ -280,8 +280,36 @@ color: red;
     @media screen and (max-width:690px) {
         #header .nav li
         {
-            padding: 20px 20px;
+            padding: 20px 10px;
         }
 
 
     }
+    @media screen and (max-width:490px) {
+        .content .movieTitle
+        {
+            width: 150px;
+        }
+        .content >p
+        {
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll;
+        }
+        .play
+        {
+            top:320px
+        }
+        .play img{
+        padding: 5px;
+        }
+        .play >p
+        {
+          font-size: 25px;
+          left: 30px;
+          position: absolute;
+        }
+    }
+
+
+
