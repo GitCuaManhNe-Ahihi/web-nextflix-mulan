@@ -9,6 +9,7 @@
 {
     min-height: 100vh;
     background:rgba(0, 0, 0, 0.9);
+    
 }
 #header
 {
@@ -104,7 +105,7 @@ color: red;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center0;
+    justify-content: center;
     align-items: center;
 }
 #banner .bg
@@ -162,6 +163,7 @@ color: red;
     position: relative;
     color: rgba(255, 255, 255, 0.973);
     top:250px;
+    overflow-y: scroll;
 }
 .content .btn
 {
@@ -231,6 +233,7 @@ color: red;
     height: 100%;
     z-index: -1;
     opacity: 0;
+    -webkit-backdrop-filter: blur(20px);
     
     
 }
@@ -294,7 +297,7 @@ color: red;
         {
             width: 300px;
             height: 200px;
-            overflow-y: scroll;
+            
         }
         .play
         {
@@ -309,7 +312,16 @@ color: red;
           left: 30px;
           position: absolute;
         }
+        #header .nav li
+        {
+            padding: 20px 4px !important;
+        }
+        .content >p
+        {
+            width: 300px;
+            height: 100px;
+           
+        }
     }
-
 
 
