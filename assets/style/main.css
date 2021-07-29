@@ -21,6 +21,8 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100000;
+    white-space: pre;
+    
 }
 #header .logo 
 {
@@ -120,7 +122,7 @@ color: red;
     display: block;
     top: 0;
     left: 200px;
-    max-width: 550px;
+    max-width: 650px;
 }
 .content .movieTitle
 {
@@ -156,7 +158,7 @@ color: red;
    border-radius: 4px;
     
 }
-.content p{
+.content >p{
     position: relative;
     color: rgba(255, 255, 255, 0.973);
     top:250px;
@@ -181,10 +183,8 @@ color: red;
 }
 .play
 {
-   position: absolute;
-   bottom: 100px;
-   padding: 0 px ;
-   left: 200px;
+   
+ 
    height: 50px;
    line-height: 50px;
    display: flex;
@@ -192,9 +192,16 @@ color: red;
    align-items: center;
    text-decoration: none;
    color: #fff;
+   position: relative;
+   top: 350px;
+   padding: 5px;
+   width: 300px;
+   left: 0;
 }
 .play img{
     height: 100%;
+    position: absolute;
+    left: 0;
 }
 .play p{
     font: 2em sans-serif;
@@ -210,8 +217,9 @@ color: red;
     justify-content: center;
     align-items: center;
     outline: none;
-    opacity: 0;
-    
+    width: 80%;
+   
+   
 }
 .videoDiv
 {
@@ -222,6 +230,8 @@ color: red;
     width: 100%;
     height: 100%;
     z-index: -1;
+    opacity: 0;
+    
     
 }
 .videoDiv.active
@@ -242,3 +252,36 @@ color: red;
 {
  height: 100%;
 }
+@media screen and (max-width:1097px) {
+    #header
+    {
+        flex-direction: column;
+        padding: 30px 0px !important;
+    }
+    .play
+    {
+    position: relative;
+    top: 350px;
+    padding: 5px;
+    width: 300px;
+    left: 0;
+    }
+    .content
+    {
+        left: 70px;
+    }
+    .content >p
+    {
+        width: 400px;
+    }
+    
+    
+    }
+    @media screen and (max-width:690px) {
+        #header .nav li
+        {
+            padding: 20px 20px;
+        }
+
+
+    }
